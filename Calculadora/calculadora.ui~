@@ -226,6 +226,7 @@ Casimiro Gómez y Cia.</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <signal name="clicked" handler="rasp_control_on_bres_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -275,6 +276,7 @@ Casimiro Gómez y Cia.</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <signal name="clicked" handler="rasp_control_on_bmas_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="left_attach">3</property>
