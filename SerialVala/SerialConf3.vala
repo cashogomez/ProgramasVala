@@ -131,7 +131,7 @@ using Posix;
 		}
 		
 		static int main ( string [] args ) {
-			
+			Serial Puerto0 = new Serial ();			
 			fd = Posix.open ("/dev/ttyACM0", Posix.O_RDWR | Posix.O_NOCTTY);
 			//comprobamos que existe un descriptor de fichero valido
 			if (fd < 0) {
@@ -140,7 +140,7 @@ using Posix;
 			}
 			Posix.tcflush(fd,Posix.TCIOFLUSH);//Descarte o escriba para limpiar el buffer
 			//aqui va lo de la configuracion
-			Serial Puerto0 = new Serial ();
+
 			int Perror = Puerto0.Configurar(8, 9600);
 		
 			if (Perror == -2) {
@@ -154,7 +154,14 @@ using Posix;
 				Puerto0.leerbytes();
 				//Posix.tcflush(fd,Posix.TCIOFLUSH);//Descarte o escriba para limpiar el buffer
 				printf("Los datos leidos del serial son: %s\n\r",Puerto0.datosleidos);
-				Puerto0.enviarbytes("a");
+				printf("Introduce una letra: ");
+				string lectura= GLib.stdin.read_line();
+				if (lectura=="a") {
+					Puerto0.enviarbytes("a");
+				}
+				else {
+					Puerto0.enviarbytes("s");
+				}
 			}
 // **********************************************************************
 
