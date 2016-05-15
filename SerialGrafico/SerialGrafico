@@ -1,0 +1,43 @@
+[editor]
+line_wrapping=false
+line_break_column=72
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=SerialGrafico
+base_path=/home/casho/Documentos/github/ProgramasVala/SerialGrafico
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=2
+FILE_NAME_0=147;Vala;0;EUTF-8;1;1;0;%2Fhome%2Fcasho%2FDocumentos%2Fgithub%2FProgramasVala%2FBindingC_Ejemplo1%2Fmyfunc.vapi;0;4
+FILE_NAME_1=64;C;0;EUTF-8;1;1;0;%2Fhome%2Fcasho%2FDocumentos%2Fgithub%2FProgramasVala%2FBindingC_Ejemplo1%2Fmyfunc.h;0;4
+FILE_NAME_2=49;Vala;0;EUTF-8;1;1;0;%2Fhome%2Fcasho%2FDocumentos%2Fgithub%2FProgramasVala%2FBindingC_Ejemplo1%2Fejemplo.vala;0;4
+
+[build-menu]
+ValaFT_00_LB=_Compilar
+ValaFT_00_CM=valac -c "%f"  --pkg  gtk+-3.0 --pkg posix --pkg gmodule-2.0  --vapidir .
+ValaFT_00_WD=
+ValaFT_01_LB=Con_struir
+ValaFT_01_CM=valac "%f"  --pkg  gtk+-3.0 --pkg posix --pkg gmodule-2.0  --vapidir .
+ValaFT_01_WD=
+filetypes=Vala;
